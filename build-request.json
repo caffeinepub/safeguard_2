@@ -1,0 +1,75 @@
+{
+  "kind": "build_request",
+  "title": "Update emergency contact to Aditya Patel (9546530546)",
+  "projectName": "SafeGuard",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Update the default emergency contact name to 'Aditya Patel' and phone number to '9546530546' in the Settings page pre-populated defaults, so that on first load or when no profile exists, these values are automatically filled in.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "mera number (9546530546) aur name (Aditya Patel) hona chahiye"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Settings page shows 'Aditya Patel' as the default contact name when no profile is saved",
+        "Settings page shows '9546530546' as the default phone number when no profile is saved",
+        "The Emergency Call modal displays 'Aditya Patel' and '9546530546' when the default contact is loaded"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Update the backend default emergency contact data so that the stored emergency contact is initialized with name 'Aditya Patel' and phone '9546530546' for all users who have not customized their contact.",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "mera number (9546530546) aur name (Aditya Patel) hona chahiye"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend returns 'Aditya Patel' and '9546530546' as the default emergency contact when none has been explicitly set",
+        "Existing saved contacts are not overwritten"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Update the Home page to prominently display the emergency contact name 'Aditya Patel' and number '9546530546', with a large, clearly visible CALL NOW button that initiates a call to 9546530546 via the tel: protocol. The page should communicate that anyone — girls, boys, or children — in danger can use this to call for help.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "koi bhi ladki ladka y bache kisi musibat me fasne ke bad mujhe call kar sake"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Home page displays 'Aditya Patel' and '9546530546' prominently",
+        "CALL NOW button triggers tel:9546530546",
+        "Page messaging clearly states it is for safety emergencies and is accessible to anyone in trouble"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not change the routing structure or authentication hooks",
+    "Immutable paths (useInternetIdentity, useActor, main.tsx, components/ui) must not be modified"
+  ],
+  "nonGoals": [
+    "Adding new pages or routes",
+    "Changing the visual theme or color palette",
+    "Adding real-time or chat features",
+    "Supporting multiple emergency contacts"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

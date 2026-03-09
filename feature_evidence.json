@@ -1,0 +1,43 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-default-emergency-contact-name-to-aditya-patel-and-phone-number-to-9546530546-in-the-settings-page-pre-populated-defaults-so-that-on-first-load-or-when-no-profile-exists-these-values-are-automatically-filled-in",
+      "featureTitle": "Update the default emergency contact name to 'Aditya Patel' and phone number to '9546530546' in the Settings page pre-populated defaults, so that on first load or when no profile exists, these values are automatically filled in.",
+      "files": [
+        "frontend/src/pages/Settings.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-home-page-to-prominently-display-the-emergency-contact-name-aditya-patel-and-number-9546530546-with-a-large-clearly-visible-call-now-button-that-initiates-a-call-to-9546530546-via-the-tel-protocol-the-page-should-communicate-that-anyone-girls-boys-or-children-in-danger-can-use-this-to-call-for-help",
+      "featureTitle": "Update the Home page to prominently display the emergency contact name 'Aditya Patel' and number '9546530546', with a large, clearly visible CALL NOW button that initiates a call to 9546530546 via the tel: protocol. The page should communicate that anyone — girls, boys, or children — in danger can use this to call for help.",
+      "files": [
+        "frontend/src/pages/Home.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

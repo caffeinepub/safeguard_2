@@ -1,0 +1,15 @@
+{
+  "frontend/src/App.tsx": "Main application component that sets up routing with TanStack Router, wraps the app with ThemeProvider for theme support, and includes the Toaster component for notifications.",
+  "frontend/src/components/Layout.tsx": "Layout wrapper component providing consistent header with app branding and settings navigation, main content area, and footer with attribution across all pages.",
+  "frontend/src/pages/Home.tsx": "Home page prominently displaying Aditya Patel's emergency contact (9546530546) with a large emergency button, a direct \"ABHI CALL KAREIN\" button accessible without login, Hindi messaging for girls/boys/children in trouble, and a contact card always visible regardless of authentication state.",
+  "frontend/src/pages/Settings.tsx": "Settings page with default emergency contact pre-filled as 'Aditya Patel' / '9546530546', showing the contact prominently even for unauthenticated users with a direct CALL NOW button, and admin-editable form or read-only display based on user role.",
+  "frontend/src/components/EmergencyCallModal.tsx": "Modal dialog component displaying emergency contact information and providing a prominent \"CALL NOW\" button using tel: protocol, accessible to all authenticated users without admin restrictions.",
+  "frontend/src/hooks/useEmergencyContact.ts": "Custom React Query hook managing emergency contact state, providing functions to fetch the current contact via getEmergencyContact() and update it via setEmergencyContact() with automatic cache invalidation.",
+  "frontend/src/index.css": "Global styles with safety-themed OKLCH color system featuring soft teal for trust, coral for emergency actions, warm neutrals, and custom utility classes for emergency and warning colors.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with safety-themed colors, custom spacing for mobile-optimized touch targets, enhanced shadows, and responsive container settings.",
+  "frontend/index.html": "HTML entry point with comprehensive SEO meta tags including Open Graph and Twitter Card tags, structured JSON-LD data for search engines, canonical URL, and proper language attribute for improved search engine discoverability and social media sharing.",
+  "frontend/public/robots.txt": "Search engine crawler configuration file that allows all bots to index the site and references the sitemap location.",
+  "frontend/public/sitemap.xml": "XML sitemap listing all main application routes (home and settings pages) with priority and change frequency metadata for search engine indexing.",
+  "frontend/src/hooks/useUserRole.ts": "Custom React Query hook that checks if the current user is an admin by calling the backend isCallerAdmin() method, returning isAdmin boolean along with loading and error states.",
+  "frontend/src/hooks/useUserProfile.ts": "Custom React Query hook that fetches the current user's profile using getCallerUserProfile() and provides a saveProfile function to save the profile with automatic cache invalidation."
+}

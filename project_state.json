@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Safety website for emergency contact — allows anyone (girls, boys, children) in trouble to call Aditya Patel at 9546530546. Site displays contact name and number prominently for quick access.",
+  "architectural_notes": [
+    "Contact info hardcoded: Name = Aditya Patel, Phone = 9546530546"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-update-the-default-emergency-contact-name-to-aditya-patel-and-phone-number-to-9546530546-in-the-settings-page-pre-populated-defaults-so-that-on-first-load-or-when-no-profile-exists-these-values-are-automatically-filled-in",
+      "title": "Update the default emergency contact name to 'Aditya Patel' and phone number to '9546530546' in the Settings page pre-populated defaults, so that on first load or when no profile exists, these values are automatically filled in.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-home-page-to-prominently-display-the-emergency-contact-name-aditya-patel-and-number-9546530546-with-a-large-clearly-visible-call-now-button-that-initiates-a-call-to-9546530546-via-the-tel-protocol-the-page-should-communicate-that-anyone-girls-boys-or-children-in-danger-can-use-this-to-call-for-help",
+      "title": "Update the Home page to prominently display the emergency contact name 'Aditya Patel' and number '9546530546', with a large, clearly visible CALL NOW button that initiates a call to 9546530546 via the tel: protocol. The page should communicate that anyone — girls, boys, or children — in danger can use this to call for help.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Safety emergency contact website displaying name 'Aditya Patel' and number '9546530546' so anyone in trouble can quickly call for help",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Update the backend default emergency contact data so that the stored emergency contact is initialized with name 'Aditya Patel' and phone '9546530546' for all users who have not customized their contact.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Safety Emergency Contact Website",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update emergency contact to Aditya Patel (9546530546)",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Update Settings page default emergency contact to 'Aditya Patel' and '9546530546'",
+      "acceptanceCriteria": [
+        "Settings page shows 'Aditya Patel' as the default contact name when no profile is saved",
+        "Settings page shows '9546530546' as the default phone number when no profile is saved",
+        "The Emergency Call modal displays 'Aditya Patel' and '9546530546' when the default contact is loaded"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Settings.tsx",
+          "operation": "modify",
+          "description": "Update the default emergency contact state initialization to use fullName='Aditya Patel' and number='9546530546' instead of current placeholder values. Ensure these defaults are pre-populated in the form fields when no saved contact exists."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Update Home page to prominently display emergency contact 'Aditya Patel' (9546530546) with accessible CALL NOW button",
+      "acceptanceCriteria": [
+        "Home page displays 'Aditya Patel' and '9546530546' prominently",
+        "CALL NOW button triggers tel:9546530546",
+        "Page messaging clearly states it is for safety emergencies and is accessible to anyone in trouble"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Home.tsx",
+          "operation": "modify",
+          "description": "Update the Home page hero section to prominently display the emergency contact name 'Aditya Patel' and phone number '9546530546'. Add clear messaging that communicates the service is for anyone (girls, boys, or children) in danger. Ensure the CALL NOW button uses tel:9546530546 protocol to initiate direct calls. Make the contact information highly visible and accessible without requiring authentication or modal interaction for emergency situations."
+        },
+        {
+          "path": "frontend/src/components/EmergencyCallModal.tsx",
+          "operation": "modify",
+          "description": "Verify that the modal correctly displays the emergency contact name and number when opened. Ensure the CALL NOW button uses the tel: protocol with the contact number. No structural changes needed, but confirm the component properly renders 'Aditya Patel' and '9546530546' when passed from the Home page."
+        }
+      ]
+    }
+  ]
+}
